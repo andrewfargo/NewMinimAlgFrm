@@ -1,0 +1,278 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fontspec,unicode-math}
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\setmainfont{TeX Gyre Pagella}
+\setmathfont{TeX Gyre Pagella Math}
+
+\title{Minimalist Formalizations Syllabus}
+\date{\today}
+\author{Andrew Fargo\\ Professors Cynthia Hansen and Christy Hazel}
+
+\addbibresource{../project.bib}
+
+\begin{document}
+
+% where is minimalism used as a scientific model of linguistics
+% expands research questions rather than a practical application
+
+\maketitle
+
+\section{What is a mathematical model?}
+
+Takeaways:
+\begin{enumerate}
+\item A mathematical model is a type of scientific model
+\item Models are dogmatic. No model is a perfect model.
+\item A mathematical model can be evaluated on its expressive power, cost, and empirical soundness.
+\item A mathematical model is defined by its objects and axioms.
+\end{enumerate}
+
+\subsection{Types of scientific models}
+
+Learning objectives:
+\begin{enumerate}
+\item Scientific models can take the form of computational models, mathematical models, conceptual models, physical models, etc.
+\item The type of model used is purpose-fit.
+\item Mathematical models and computational models are both typically used for prediction, but do so in different ways.
+\end{enumerate}
+
+Questions for discussion
+\begin{enumerate}
+\item (A) Is a mathematical model a scientific model? Why or why not?
+\item (B) Take one model, and give two situations in which the model is a good choice and poor choice, respectively.
+\item (B) Take one situation, and give two models which are both good choices for analysis.
+\end{enumerate}
+
+\subsection{Examples of scientific models}
+
+Learning objectives:
+\begin{enumerate}
+\item One phenomenon may have very many scientific models, to varying degrees of success depending on the use-case.
+\item Complexity and accuracy are often trade-offs.
+\item A mathematical model can be evaluated on its expressive power, cost, and empirical soundness.
+\item A mathematical model is defined by its objects and axioms.
+\end{enumerate}
+
+Questions for discussion:
+\begin{enumerate}
+\item (B) Find one example of a scientific model we have not talked about. Explain why it is a scientific model.
+\item (C) In your discipline, list examples which do not fit cleanly inside or outside the definition of a scientific model?
+  Which parts of these examples resemble models? Which parts do not?
+\end{enumerate}
+
+\section{Linguistics and models}
+
+% make note of multiple senses of grammar
+% models vs machinery: pose this as a questions
+Takeaways:
+\begin{enumerate}
+\item There exist many models of syntax, particularly in generative linguistics.
+\item Chomsky's Heirarchy is a method of evaluating a grammar's expressive power.
+\item ``Minimalism'' is not one theory, but a guiding set of principles for several models of syntax.
+\end{enumerate}
+
+\subsection{Examples in Generative Linguistics}
+
+Learning objectives:
+\begin{enumerate}
+\item List various models of generative syntax.
+\item Sort them into the different types of scientific models.
+\item Know and understand Chomsky's Heirarchy of formal languages.
+\end{enumerate}
+
+Questions for discussion:
+\begin{enumerate}
+\item (A) If you were to write a parser, which model of generative syntax would you use?
+  If you were to analyze the time complexity of the parser?
+\item (B) Is algebraic generative syntax  a computational model of linguistics?
+\item (B) List three technologies in your life that derive from models of generative linguistics.
+\item (C) Sort the following languages into Chomsky's Heirarchy: valid e-mail address, valid nested parentheses, first-order symbolic logic, the English language, ISO-8601 timestamp,
+  the C programming language, AT\&T assembly (or a comparable assembly language).
+\end{enumerate}
+
+\subsection{The Minimalist Program and their models}
+
+Learning objectives:
+\begin{enumerate}
+\item Have a refresher on ``90s'' minimalism.
+\item Know the historical context for Computational and Hopf-Algebraic Minimalism
+\item Differentiate the Minimalist Program's guiding principles from specific models of minimalism.
+\item Evaluate to what extent various offshoots of minimalism are scientific models.
+\end{enumerate}
+
+Questions for discussion:
+\begin{enumerate}
+\item (A) What are the defining objects and equations of Chomsky's original formulation of minimalism?
+\item (A) Is this formulation a computational model? Mathematical model? Scientific model?
+\item (B) List one ``module'' or other theory of linguistics (e.g. a phonological theory) and how it would integrate into this model of UG.
+\item (C) Do you believe this formulation of universal grammar assumes too much? Too little? 
+\item (C) What do you anticipate are the most ``problematic'' or ``imperfect''  assumptions made?
+\end{enumerate}
+
+\section{A Comparative Review of Computational and Hopf-Algebraic Minimalism}
+
+Takeaways:
+\begin{enumerate}
+\item ``New minimalism'' is Chomsky's recent revision of the Minimalist Program.
+\item Ed Stabler's ``Computational Minimalism'' and Marcolli, Chomsky, and Berwick's Hopf-Algebraic Minimalism are two appraoches to modelling the minimalist program.
+\item Computational minimalism aligns closer to the ``90s formulation'' of minimalism, whereas Hopf-Algebraic minimalism aligns closer to ``New minimalism.''
+\end{enumerate}
+
+\subsection{Chomsky's New Minimalism}
+
+Learning objectives:
+\begin{enumerate}
+\item Identify the differences between ``90s Minimalism'' and ``New minimalism''
+\item Know the definitions of the Strong Minimalist Thesis (SMT), Workspaces, and the Miracle Creed
+\item Critically think about the empirical strengths and shortcomings of ``New minimalism''
+\end{enumerate}
+
+Readings:
+\begin{enumerate}
+\item Section 7 of \citetitle{chomsky23:_merge_stron_minim_thesis} \cite[46--60]{chomsky23:_merge_stron_minim_thesis}
+\item \citetitle{chomsky24:_mirac_creed_smt} \cite{chomsky24:_mirac_creed_smt}
+\item Chapter 0 of \citetitle{marcolli25:mcb} \cite[1--18]{marcolli25:mcb}
+\end{enumerate}
+
+Questions for discussion:
+\begin{enumerate}
+\item (A) What are the defining objects and principles of new minimalism?
+\item (B) How does ``New minimalism'' differ in architecture from ``90s Minimalism''?
+\item (A) What is the SMT? How does it relate to the miracle creed?
+\item (B) Are you convinced by the concept of the ``miracle creed?'' Why or why not?
+\item (C) Give one example for and one example against the existance of the miracle creed in your area of interest. For mathematics, e.g., one may write about convergent series in complex analysis and G\"odel's incompleteness theorem.
+\item (B) To what extent is ``New minimalism'' a scientific theory? A mathematical model?
+\item (C) Design an experiment to test the legitimacy of workspaces in a psycholinguistic model. Can such an experiment exist?
+\end{enumerate}
+
+
+\subsection{Constituency (Merge)}
+
+Learning objectives:
+\begin{enumerate}
+\item Both Computational and Hopf-Algebraic Minimalism accept Bare Phase Structure
+\item While Computational Minimalism defines Merge only for trees which have compatible
+  features, Hopf-Algebraic Minimalism allows for free Merge.
+\end{enumerate}
+
+Readings:
+\begin{enumerate}
+\item Chapter 1, Sections 1--4 of \citetitle{marcolli25:mcb} \cite[19--55]{marcolli25:mcb}
+\item Sections 1 and 2 of \citetitle{stabler10:_oxfor_handb_linguis_minim} \cite[1--9]{stabler10:_oxfor_handb_linguis_minim}
+\item Sections 1 and 3 of \citetitle{chomsky23:_merge_stron_minim_thesis} \cite[1--5,13--27]{chomsky23:_merge_stron_minim_thesis}
+\end{enumerate}
+
+Questions for Discussion:
+\begin{enumerate}
+\item (A) How is Merge defined in MCB? In Stabler?
+\item (B) One common criticism of the Minimalist Program is the assumption of a perfect speaker. Do you think the allowance of free Merge addresses this issue?
+\item (B) What are the benefits/downsides of free Merge for a computational model of syntax? A mathematical model of syntax?
+\item (MA) Prove that the sets and operations Marcolli et al. describe form a Hopf Algebra.
+\item (MB) Why can't Merge be the product operation of workspaces with a compatible coproduct?
+\end{enumerate}
+
+\subsection{X-Linguistic Similarities (Features)}
+
+Learning objectives:
+\begin{enumerate}
+\item While Computational Minimalism adopts features as an inherent property of lexical items, Hopf-Algebraic minimalism states all language-specific constraints take place in externalization.
+\end{enumerate}
+
+Readings:
+\begin{enumerate}
+\item Chapter 1, Section 12 of \citetitle{marcolli25:mcb} \cite[105--121]{marcolli25:mcb}
+\item Section 3 of \citetitle{stabler10:_oxfor_handb_linguis_minim} \cite[9--11]{stabler10:_oxfor_handb_linguis_minim}
+\end{enumerate}
+
+
+Questions for Discussion:
+\begin{enumerate}
+\item (A) How does Stabler describe features in Universal Grammar?
+\item (B) What account of features does MCB provide?
+\item The refusal of explicit features in a theory of Universal Grammar is a bold claim that requires significant empirical evidence.
+\subitem (C) First, what implications would the absence of features have for language acquisition?
+\subitem (C) Find one piece of experimental evidence that features may not exist.
+\subitem (B) Why would the absence of features be a downside for a computational model of syntax?
+\end{enumerate}
+
+\subsection{Word Order (Linearization)}
+
+Learning Objectives
+\begin{enumerate}
+\item While Computational Minimalism treats linearization as a separate process, Hopf-Algebraic Minimalism places linearization in externalization, too.
+\end{enumerate}
+
+Readings:
+\begin{enumerate}
+\item Chapter 1 Section 13 of \citetitle{marcolli25:mcb} \cite[122--128]{marcolli25:mcb}
+\item Section 5 of \citetitle{stabler10:_oxfor_handb_linguis_minim} \cite[15--16]{stabler10:_oxfor_handb_linguis_minim}.
+\item Section 5 of \citetitle{chomsky23:_merge_stron_minim_thesis} \cite[31--36]{chomsky23:_merge_stron_minim_thesis}
+\item Supposedly \citetitle{berwick15:_why_only_us} has content on externalization as a necessary compotent of language, but this book is not open access like MCB.\cite{berwick15:_why_only_us}
+\item A selection from Marcolli's work in preparation: \citetitle{marcolli:_model_extern}. \cite{marcolli:_model_extern}
+\end{enumerate}
+
+Questions for Discussion:
+\begin{enumerate}
+\item (A) What processes govern linearization in Computational Minimalism? Hopf-Algebraic Minimalism?
+\item (B) Compare the two: in particular, how are they similar?
+\item (B) How do features (or comparable structures) interact with linearization in both models? Can they?
+\end{enumerate}
+
+\subsection{Grammaticality (Filtering)}
+
+Learning objectives:
+\begin{enumerate}
+\item Computational Minimalism does not allow for the merging of ungrammatical phrases.
+\item Hopf-Algebraic Minimalism allows the merging of ungrammatical phrases, but filters them out during externalization.
+\end{enumerate}
+
+Readings:
+\begin{enumerate}
+\item Chapter 1, Sections 12.4--12.7, 15 of \citetitle{marcolli25:mcb} \cite[113--121,139--141]{marcolli25:mcb}
+\item Section 5 of \citetitle{chomsky23:_merge_stron_minim_thesis} \cite[31--36]{chomsky23:_merge_stron_minim_thesis}
+\end{enumerate}
+
+Questions for Discussion:
+\begin{enumerate}
+\item (A) How does Computational Minimalism and Hopf-Algebraic Minimalism account for grammaticality?
+\item (B) How do the models compare when considering predictions of ungrammaticality?
+\item (C) Using 
+\item (C) MCB posits that Syntactic Parameters are embedded in \(\mathbb{F}_2\), but admits this might not be an ideal choice. Why is this not an ideal choice?
+\item (C) Keeping this in mind, what might be a ``more efficient'' alternative?
+\end{enumerate}
+
+\subsection{Paraphrases (Possible Derivations)}
+
+Learning objectives:
+\begin{enumerate}
+\item Computational Minimalism has no explicit framework for identical derivations.
+\item A derivation in the sense of Hopf-Algebraic Minimalism is a sum of all possible derivations which converge.
+\end{enumerate}
+
+Readings:
+\begin{enumerate}
+\item Chapter 1, Sections 5 and 10 of \citetitle{marcolli25:mcb} \cite[56--60,92--95]{marcolli25:mcb}
+\end{enumerate}
+
+Questions for Discussion:
+\begin{enumerate}
+\item (C) Design an experiment which supports or rejects simultaneous derivations through paraphrasal sentences.
+\item (C) Clearly, MCB does not posit that humans have a vector space of workspaces inside their heads. The use of vector spaces and cancellation is a common combinatorial trick known as a sieve method. Find another example of a sieve method in applied mathematics and contrast it to the vector space model of Hopf-Algebraic Minimalism.
+\end{enumerate}
+
+\section{Final Project: Evaluating Computational and Hopf-Algebraic Minimalism}
+
+\printbibliography
+
+% Expressive power
+% Empirical soundness
+% Cost
+% Adherence to SMT
+
+\end{document}
+

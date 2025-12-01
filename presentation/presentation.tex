@@ -1,0 +1,212 @@
+\documentclass{beamer}
+\usepackage{enumerate}
+\usepackage[backend=biber]{biblatex}
+\usepackage{tikz-cd}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+\setbeamercovered{transparent}
+
+
+\title{Minimalist Syntax and Mathematics}
+\subtitle{A practical approach to Hopf-Algebraic Minimalism in the Classroom}
+\author[Fargo]{Andrew Fargo \\Under Profs.~Cynthia~Hansen,~Christy~Hazel}
+\institute[Grinnell College]{Grinnell College\\LIN-397-01 IP: New Minimalism \& Alg Frm}
+
+\addbibresource{../project.bib}
+\nocite{*}
+
+\date{\today}
+\usetheme{Berlin}
+
+\begin{document}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction and Motivations}
+
+\begin{frame}
+  \frametitle{What: Math and Linguistics at Grinnell College}
+\end{frame}
+
+\begin{frame}
+  \frametitle{So What: Mathematical Literacy}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Now What: A Course on MCB!}
+\end{frame}
+
+\section{Course Syllabus}
+
+\begin{frame}<1>[label=overview]
+  \frametitle{Year Overview}
+  \begin{enumerate}
+  \item<1,4>[Unit 1] Scientific Modeling
+    \begin{enumerate}
+    \item Types of Scientific Models
+    \item Examples of Scientific Models
+    \end{enumerate}
+  \item<2,4>[Unit 2] Models of Syntax
+    \begin{enumerate}
+    \item Examples in Generative Linguistics
+    \item The Minimalist Program and its Models
+    \end{enumerate}
+  \item<3,4>[Unit 3] Comparative Review
+    \begin{enumerate}
+    \item Chomsky's New Minimalism
+    \item Constituency (Merge)
+    \item X-Linguistic Similarities (Features)
+    \item Word Order (Linearization)
+    \item Grammaticality (Filtering)
+    \item Paraphrases (Possible Derivations)
+    \end{enumerate}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Unit 1: Scientific Modeling}
+  Takeaways:
+\begin{enumerate}
+\item A mathematical model is a type of scientific model
+\item Models are dogmatic. No model is a perfect model.
+\item A mathematical model can be evaluated on its expressive power, cost, and empirical soundness.
+\item A mathematical model is defined by its objects and axioms.
+\end{enumerate}
+\end{frame}
+
+\againframe<2>{overview}
+
+\begin{frame}
+  \frametitle{Unit 2: Models of Syntax}
+  Takeaways:
+\begin{enumerate}
+\item There exist many models of syntax, particularly in generative linguistics.
+\item Chomsky's Heirarchy is a method of evaluating a grammar's expressive power.
+\item ``Minimalism'' is not one theory, but a guiding set of principles for several models of syntax.
+\end{enumerate}
+\end{frame}
+
+\againframe<3>{overview}
+
+\begin{frame}
+  \frametitle{Unit 3: Comparative Review}
+  Takeaways:
+  \begin{enumerate}
+  \item ``New minimalism'' is Chomsky's recent revision of the Minimalist Program.
+  \item Ed Stabler's ``Computational Minimalism'' and Marcolli, Chomsky, and Berwick's Hopf-Algebraic Minimalism are two appraoches to modelling the minimalist program.
+  \item Computational minimalism aligns closer to the ``90s formulation'' of minimalism, whereas Hopf-Algebraic minimalism aligns closer to ``New minimalism.''
+  \end{enumerate}
+\end{frame}
+
+\againframe<4>{overview}
+
+\begin{frame}
+  \frametitle{Optional Unit: Mathematical Prerequisites}
+  Course equivalences:
+  \begin{itemize}
+  \item MAT-322 ``Advanced Topics in Abstract Algebra''
+  \end{itemize}
+
+  Covers:
+  \begin{itemize}
+  \item Elementary Category Theory
+  \item Algebras, Bialgebras, Hopf Algebras, and Universal Algebras
+  \item Modules over Algebras
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optional Unit: Minimalist Prerequisites}
+  Course equivalences:
+  \begin{itemize}
+  \item LIN-216 ``Syntax''
+  \item LIN-375 ``Advanced Linguistic Analysis'' in Syntax
+  \item LIN-295/LIN-395 Special Topic in Syntax
+  \end{itemize}
+
+  Covers:
+  \begin{itemize}
+  \item P\&P Architecture
+  \item Governor-Binding Theory
+  \item 90s Minimalism
+  \end{itemize}
+\end{frame}
+
+\section{Formatted Examples}
+
+\begin{frame}
+  \frametitle{Example Essay Prompt}
+  In three double-spaced pages, answer the following:
+  \begin{itemize}
+  \item What is the SMT? How does it relate to the miracle creed?
+  \item Are you convinced by the concept of the miracle creed? Why or why not?
+  \item Give one example for and one example against the existance of the miracle creed in your area of interest. E.g. in Mathematics, one may write about complex-analytic series expansions and G\"odel's incompleteness theorem.
+  \end{itemize}
+  You may cite \citetitle{chomsky24:_mirac_creed_smt} \cite{chomsky24:_mirac_creed_smt}, \citetitle{chomsky23:_merge_stron_minim_thesis} \cite{chomsky23:_merge_stron_minim_thesis}, or other resources should you find them useful.
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Example Worksheet Questions}
+  On the \(\mathbb{Q}\)-vector space of workspaces \(\mathcal{WS}:=\mathcal{V}(\mathcal{F}_{\mathcal{SO}_0})\), \citeauthor{marcolli25:mcb} define a product \(\sqcup\), coproduct \(\Delta\), antipode \(S\), and unit and counit \(\epsilon, \eta\). Prove that these operations compatibly form a Hopf Algebra. That is, show that the hexagon
+    \[
+      \begin{tikzcd}[column sep=tiny]
+        &\mathcal{WS}\otimes\mathcal{WS}\arrow[rr,"S\otimes\mathrm{id}"]
+        &
+        &\mathcal{WS}\otimes\mathcal{WS}\arrow[dr,"\sqcup"]
+        &\\
+        \mathcal{WS}\arrow[ur,"\Delta"]\arrow[rr,"\epsilon"]\arrow[dr,"\Delta"]
+        &
+        &\mathbb{Q}\arrow[rr,"\eta"]
+        &
+        &\mathcal{WS}\\
+        &\mathcal{WS}\otimes\mathcal{WS}\arrow[rr,"\mathrm{id}\otimes S"]
+        &
+        &\mathcal{WS}\otimes\mathcal{WS}\arrow[ur,"\sqcup"]
+        &\\
+      \end{tikzcd}
+    \]
+    commutes.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example Lecture Notes Excerpt}
+\end{frame}
+
+\section{Future Directions}
+
+\begin{frame}
+  \frametitle{A course for Grinnell}
+\end{frame}
+
+\begin{frame}
+  \frametitle{A course for the public}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{It's your turn!}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{Bibliography}
+  \printbibliography  
+\end{frame}
+
+
+\end{document}
