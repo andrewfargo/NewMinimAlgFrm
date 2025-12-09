@@ -41,11 +41,11 @@
 \section{Introduction and Motivations}
 
 \begin{frame}
-  \frametitle{What: Math and Linguistics at Grinnell College}
+  \frametitle{What: Math of Linguistics at Grinnell College}
   \begin{columns}
     \column{0.5\textwidth}
       \begin{itemize}
-      \item Absence of math \& linguistics classes at Grinnell and comparable institutions
+      \item Absence of math of linguistics classes at Grinnell and comparable institutions
       \item Cf. integration of mathematics into Biology, Physics, Psychology.
       \end{itemize}
     \column{0.5\textwidth}
@@ -58,25 +58,28 @@
 
 \begin{frame}
   \frametitle{So What: Mathematical Literacy}
-  What are linguists missing by not having mathematics in their toolbox?
+  What ways has mathematics already found success in linguistics?
   \begin{itemize}
   \item Disciplinary level: precision of hypotheses and modeling for new hypotheses
   \item Subdisciplinary level:
     \begin{itemize}
-      \item Phonetics: Recent success in statistical models (esp. Neural Networks)
+      \item Phonetics: Statistical modeling (esp. Neural Networks)
       \item Typology: Clustering models and numerical analysis.
       \item Syntax: Generative models, algebraic representations, etc.
       \item ...and much more!
     \end{itemize}
   \end{itemize}
+  What type of literacy is still needed? What opportunities would it provide?
 \end{frame}
 
 \begin{frame}
   \frametitle{Now What: A Course on MCB}
   \begin{itemize}
-  \item A followup to a standard UG Syntax course, ideally after a Mathematical Linguistics course
-  \item Critically compares two mathematical approaches to minimalist syntax
-  \item Practices proving statements from mathematical axioms and stating hypotheses
+  \item A followup to a standard undergraduate syntax course, ideally after a Mathematical Linguistics course
+  \item Critically compares two mathematical approaches to minimalist syntax:
+    Ed Stabler's Computational Minimalism and Marcolli, Chomsky, and Berwick's Hopf-Algebraic Minimalism
+    % name them!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  \item Practices new mathematical literacies concerning minimalist models; e.g. identifying/proving expected behavior from first principles 
   \item Offers a starting point for integrating math into linguistics courses at Grinnell and elsewhere
   \end{itemize}
 \end{frame}
@@ -84,6 +87,7 @@
 \section{Course Syllabus}
 
 \begin{frame}<1>[label=overview]
+  % add spacer column!!!!!!!!!!!!!!!!!!!!!!!!!!
   \frametitle{Year Overview}
   \begin{enumerate}
   \item<1,4>[Unit 1] Scientific Modeling
@@ -162,6 +166,7 @@
 
 \begin{frame}
   \frametitle{Optional Unit: Minimalist Prerequisites}
+  This is for mathematicians who need more background on linguistics.
   Course equivalences:
   \begin{itemize}
   \item LIN-216 ``Syntax''
@@ -177,10 +182,29 @@
   \end{itemize}
 \end{frame}
 
-\section{Formatted Examples}
+\section{Example Unit 3}
+
+% give example of reading schedule, layout of days, essay and homework etc.
+% to show depth of work thus far
+% advertisement of my research
 
 \begin{frame}
-  \frametitle{Example Essay Prompt}
+  \frametitle{Reading Schedule for sections 3.1, 3.2}
+  \begin{itemize}
+  \item W1 Monday: Section 7 of \citetitle{chomsky23:_merge_stron_minim_thesis} \cite[46--60]{chomsky23:_merge_stron_minim_thesis}
+  \item W1 Wednesday: \citetitle{chomsky24:_mirac_creed_smt} \cite{chomsky24:_mirac_creed_smt}
+  \item W1 Friday: Chapter 0 of \citetitle{marcolli25:mcb} \cite[1--18]{marcolli25:mcb}
+  \item W2 Monday: Chapter 1, Sections 1--4 of \citetitle{marcolli25:mcb} \cite[19--55]{marcolli25:mcb}
+  \item W2 Wednesday: Sections 1 and 2 of \citetitle{stabler10:_oxfor_handb_linguis_minim} \cite[1--9]{stabler10:_oxfor_handb_linguis_minim}
+  \item W2 Friday: (3.1 Essay)
+  \item W3 Monday:  Sections 1 and 3 of \citetitle{chomsky23:_merge_stron_minim_thesis} \cite[1--5,13--27]{chomsky23:_merge_stron_minim_thesis}
+  \item W3 Wednesday: (None)
+  \item W3 Friday: (3.2 Homework)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example Essay Prompt from Unit 3.1}
   In three double-spaced pages, answer the following:
   \begin{itemize}
   \item What is the SMT? How does it relate to the miracle creed?
@@ -191,7 +215,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{Example Worksheet Questions}
+  \frametitle{Example Worksheet Questions from Unit 3.2}
   On the \(\mathbb{Q}\)-vector space of workspaces \(\mathcal{WS}:=\mathcal{V}(\mathcal{F}_{\mathcal{SO}_0})\), \citeauthor{marcolli25:mcb} define a product \(\sqcup\), coproduct \(\Delta\), antipode \(S\), and unit and counit \(\epsilon, \eta\). Prove that these operations compatibly form a Hopf Algebra. That is, show that the hexagon
     \[
       \begin{tikzcd}[column sep=tiny]
@@ -215,7 +239,12 @@
 
 \begin{frame}
   \frametitle{Example Lecture Notes Excerpt}
-  Forthcoming...
+  \begin{columns}
+    \column{0.5\textwidth}   
+    {\centering \includegraphics[height=0.7\paperheight]{excerpt1.png}}
+    \column{0.5\textwidth}
+    {\centering \includegraphics[height=0.7\paperheight]{excerpt2.png}}
+  \end{columns}
 \end{frame}
 
 \section{Future Directions}
@@ -226,6 +255,7 @@
   \item Looking at other institution's programs
   \item Getting linguistics student feedback
   \item Reaching out to academics in math of language community.
+  \item Targeting mathematicians familiar with hopf algebras who might be interested in their applications
   \end{enumerate}
 \end{frame}
 
@@ -252,7 +282,8 @@
   \begin{itemize}
   \item GitHub repository with syllabus, this presentation, and PDF scans of lecture notes
   \item Please submit pull requests!!
-  \item Everything is licensed under MIT (free to use with accreditation provided)
+    % texing lecture notes, submitting worksheets and other assignments, correcting and expanding, etc.
+  \item Everything is licensed under MIT (free to use with attribution provided)
   \item Let's develop mathematical literacy in linguistics as a community
   \end{itemize}
 \end{frame}
