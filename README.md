@@ -10,7 +10,7 @@ Presentation: [(PDF)](presentation/presentation.pdf)
 
 Course Syllabus: [(PDF)](syllabus/syllabus.pdf)
 
-Sample Lecture Notes: [(PDF)](notes/The premise of Merge.pdf)
+Sample Lecture Notes: [(PDF)](notes/The_premise_of_Merge.pdf)
 
 
 
